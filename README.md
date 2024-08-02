@@ -1,2 +1,2 @@
-# curriculoSayajinBot
-Currículo Sayajin Bot
+# Currículo Sayajin Bot
+
