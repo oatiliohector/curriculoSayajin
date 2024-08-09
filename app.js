@@ -13,4 +13,10 @@ app.get('/goodbye', (req, res) => {
   res.status(200).send('Goodbye World\n');
 });
 
-module.exports.app = serverless(app);
+if (require.main === module) {
+  app.listen(3000, () => {
+    console.log('Server is running on http://localhost:3000');
+  });
+} else {
+  module.exports.app = serverless(app);
+}
